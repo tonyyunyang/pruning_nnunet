@@ -1,3 +1,24 @@
+# Pruning nnU-Net with Minimal Performance Loss
+
+This repository contains the code implementation supporting the results in our paper:
+
+**Pruning nnU-Net with Minimal Performance Loss**  
+[Tongyun Yang](https://openreview.net/profile?id=~Tongyun_Yang1), [Yidong Zhao](https://openreview.net/profile?id=~Yidong_Zhao1), [Qian Tao](https://openreview.net/profile?id=~Qian_Tao3)  
+*MIDL 2025 - Short Papers*
+
+📄 **Paper:** [OpenReview](https://openreview.net/forum?id=uTTOhthEDR) | [PDF](https://openreview.net/pdf?id=uTTOhthEDR)
+
+## Abstract
+
+nnU-Net is widely known for its accurate and robust segmentation performance in medical imaging tasks. However, the trained networks are typically heavily parameterized, and the high computational demand limit their deployment on devices with constrained resources. In this paper, we show that more than 80% of the trained nnU-Net weights can be removed without significant performance degradation, maintaining a proxy Dice score of >0.95. This applies to both 2D and 3D configurations across four different medical image segmentation datasets. Interestingly, we observe that critical weights consistently concentrate near the U-Net encoder and decoder ends, while the bottleneck layers can be heavily pruned. These findings highlight the significant weight redundancy in nnU-Net and suggest opportunities for further optimization, to facilitate deployment of the model on devices with limited resources.
+
+## Key Findings
+
+- **80%+ weight reduction** with minimal performance loss (proxy Dice > 0.95)
+- Applicable to both **2D and 3D** configurations
+- Validated across **four different medical image segmentation datasets**
+- Critical weights concentrate near encoder/decoder ends; bottleneck layers can be heavily pruned
+
 # Link to customized packages
 
 nnUNetv2: https://github.com/tonyyunyang/nnUNet
