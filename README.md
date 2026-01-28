@@ -186,3 +186,16 @@ The pruning process follows these steps:
 6. Evaluate the pruned model's performance against ground truth
 
 This enables evaluation of how model compression through pruning affects segmentation accuracy.
+
+## Citation
+
+If you find this work useful, please cite our paper:
+
+```bibtex
+@inproceedings{yang2025pruning,
+  title={Pruning nnU-Net with Minimal Performance Loss},
+  author={Yang, Tongyun and Zhao, Yidong and Tao, Qian},
+  booktitle={Medical Imaging with Deep Learning (MIDL)},
+  year={2025}
+}
+```
